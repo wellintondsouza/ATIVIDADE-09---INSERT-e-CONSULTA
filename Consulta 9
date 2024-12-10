@@ -1,0 +1,6 @@
+SELECT 
+    Nome AS Nome_Produto,
+    Preço
+FROM Produtos
+ORDER BY Preço DESC
+LIMIT 1;
