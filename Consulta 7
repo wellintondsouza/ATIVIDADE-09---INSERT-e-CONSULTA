@@ -1,0 +1,7 @@
+SELECT 
+    Clientes.Nome AS Nome_Cliente,
+    Produtos.Nome AS Nome_Produto,
+    (Produtos.Preço * Pedidos.Quantidade) AS Valor_Total
+FROM Pedidos
+JOIN Clientes ON Pedidos.ID_Cliente = Clientes.ID_Cliente
+JOIN Produtos ON Pedidos.ID_Produto = Produtos.ID_Produto;
