@@ -1,0 +1,4 @@
+USE lojasimples;  
+SELECT ID_pedido,ID_cliente,ID_produto, Quantidade, Data
+FROM pedidos 
+WHERE Data = '2024-12-02';
