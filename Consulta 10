@@ -1,0 +1,5 @@
+select clientes.Nome As Nome_Cliente,
+Sum(Pedidos.Quantidade) As Produtos_Comprados
+From Pedidos
+Join Clientes on Pedidos.ID_Cliente = Clientes.ID_Cliente
+Group by Clientes.Nome;
