@@ -1,0 +1,7 @@
+SELECT 
+    Clientes.Nome AS Nome_Cliente,
+    Clientes.Cidade AS Cidade_Cliente
+FROM Pedidos
+JOIN Clientes ON Pedidos.ID_Cliente = Clientes.ID_Cliente
+JOIN Produtos ON Pedidos.ID_Produto = Produtos.ID_Produto
+WHERE Produtos.Nome = 'Monitor';
