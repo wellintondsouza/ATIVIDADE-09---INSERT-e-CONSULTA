@@ -1,0 +1,2 @@
+SELECT SUM(preço) AS total
+FROM produtos;
