@@ -1,0 +1,1 @@
+SELECT ID_produto, preço, Nome  FROM produtos WHERE preço > 500;
