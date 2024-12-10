@@ -1,0 +1,4 @@
+SELECT Nome
+FROM Clientes 
+JOIN Pedidos ON clientes.ID_Cliente = pedidos.ID_Cliente
+WHERE pedidos.Quantidade > 1;
